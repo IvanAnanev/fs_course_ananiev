@@ -3,15 +3,17 @@ defaults: &defaults
   encoding: unicode
   min_messages: warning
   timeout: 5000
-  pool: 5
+  pool: <%= [ENV.fetch("MAX_THREADS", 5), ENV.fetch("DB_POOL", 5)].max %>
 
 development:
-  database: fs_course_ananiev_dev
+  database: <%= ENV.fetch("DATABASE_NAME", File.basename(Rails.root)) %>_dev
   <<: *defaults
 
 test:
-  database: fs_course_ananiev_test
+  database: <%= ENV.fetch("DATABASE_NAME", File.basename(Rails.root)) %>_test
   <<: *defaults
 
-production:
+production: &deploy
   <<: *defaults
+
+staging: *deploy
