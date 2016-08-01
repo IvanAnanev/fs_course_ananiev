@@ -1,0 +1,6 @@
+- flash.each do |flash_type, msg|
+ div[class=["alert", bootstrap_class_for(flash_type), "alert-dismissible"] role="alert"]
+   button.close[type="button" data-dismiss="alert" aria-label="Close"]
+     span[aria-hidden="true"]
+       | ×
+   = msg
