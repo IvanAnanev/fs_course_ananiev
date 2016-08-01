@@ -25,9 +25,20 @@ gem "jbuilder", "~> 2.5"
 # gem "capistrano-rails", group: :development
 
 group :development, :test do
-  gem "byebug", platform: :mri
+  gem "awesome_print"
+  gem "brakeman", require: false
+  gem "bundler-audit", require: false
+  gem "byebug"
+  gem "coffeelint"
+  gem "dotenv-rails"
+  gem "factory_girl_rails"
+  gem "faker"
+  gem "pry-rails"
+  gem "rspec-rails", "~> 3.5"
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
+  gem "scss_lint", require: false
+  gem "slim_lint", require: false
 end
 
 group :development do
