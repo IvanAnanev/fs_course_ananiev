@@ -1,24 +1,28 @@
-# README
+# FS COURSE ANANIEV
+This application is the course of FLATSTACK Ruby Dev
+## Dependences
+* ruby 2.3.1
+* rbenv
+* postgres
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Production
+https://fscourseananiev.herokuapp.com/
 
-Things you may want to cover:
+## Scripts
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Setup
+```
+bin/setup
+```
+### Server start
+```
+bin/server
+```
+### Quality
+```
+bin/quality
+```
+### Tests
+```
+bin/rspec
+```
