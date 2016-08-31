@@ -7,7 +7,7 @@ class FeedbacksController < ApplicationController
     @feedback = Feedback.new(feedback_params)
 
     if @feedback.valid?
-      # FeedbackMailer.admin_email(@feedback).deliver
+      FeedbackMailer.admin_email(@feedback).deliver
       redirect_to root_path, notice: "Mail sent successfuly."
     else
       render :new
