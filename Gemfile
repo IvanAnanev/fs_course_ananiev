@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby "2.3.1"
 
-gem "rails", "~> 5.0.0"
+gem "rails", "~> 5.0.0.1"
 gem "pg"
 gem "puma", "~> 3.0"
 
@@ -50,4 +50,10 @@ group :development do
   gem "listen", "~> 3.0.5"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+end
+
+group :test do
+  gem "capybara"
+  gem "capybara-webkit"
+  gem "capybara-screenshot"
 end
