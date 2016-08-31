@@ -18,6 +18,7 @@ gem "jbuilder", "~> 2.5"
 # views
 gem "slim"
 gem "bootstrap-sass", "~> 3.3.6"
+gem "bootstrap_form"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 3.0"
