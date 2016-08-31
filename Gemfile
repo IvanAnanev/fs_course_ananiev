@@ -18,6 +18,7 @@ gem "jbuilder", "~> 2.5"
 # views
 gem "slim"
 gem "bootstrap-sass", "~> 3.3.6"
+gem "bootstrap_form"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 3.0"
@@ -50,10 +51,12 @@ group :development do
   gem "listen", "~> 3.0.5"
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
+  gem "letter_opener"
 end
 
 group :test do
   gem "capybara"
   gem "capybara-webkit"
   gem "capybara-screenshot"
+  gem "email_spec"
 end
